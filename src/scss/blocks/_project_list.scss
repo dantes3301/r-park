@@ -1,0 +1,101 @@
+.project__select_container{
+    margin: rem(64px) 0 0 0;
+    @include tablet{
+        margin: rem(24px) 0 0 0;
+    }
+}
+.project__card{
+    display: flex;
+    height: 100%;
+    border: 1px solid #DADADA;
+    border-radius: 4px;
+    @include desktop_medium{
+        flex-direction: column;
+        max-height: max-content;
+        max-width: rem(340px);
+        & .btn__position{
+            & .btn.btn__background_green{
+                width: 100%;
+            }
+        }
+    }
+    @include tablet{
+        max-width: 100%;
+    }
+}
+.project__card_img{
+    max-width: rem(340px);
+    width: 100%;
+    height: 100%;
+    & img{
+        width: 100%;
+        height: 100%;
+    }
+    @include tablet{
+        max-width: 100%;
+    }
+}
+.project__cards_container{
+    margin: rem(48px) 0 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    @include desktop_medium{
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        // align-items: center;
+    }
+    @include tablet{
+        grid-template-columns: 1fr 1fr;
+        gap: rem(16px);
+    }
+    @include mobile{
+        grid-template-columns: 1fr;
+    }
+}
+.project__card_info{
+    padding: rem(24px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    @include desktop_medium{
+        padding: rem(16px);
+    }
+}
+.project__card_name{
+    max-width: 272px;
+    width: 100%;
+    margin: 0 0 rem(12px) 0;
+    & p{
+        font-weight: 400;
+        font-size: rem(26px);
+        line-height: rem(34px);
+        font-family: 'Oswald';
+    }
+    @include desktop_medium{
+        max-width: max-content;
+        margin: 0 0 rem(8px) 0;
+    }
+}
+.project__card_city{
+    margin: 0 0 rem(12px) 0;
+    & p{
+        font-weight: 400;
+        font-size: rem(18px);
+        line-height: rem(21px);
+        color: #5A5A5A;
+    }
+    @include desktop_medium{
+        margin: 0 0 rem(24px) 0;
+    }
+}
+.project__btn{
+    margin: rem(64px) 0 0 0;
+    & .btn__position{
+        display: flex;
+        justify-content: center;
+    }
+    @include tablet{
+        margin: rem(24px) 0 0 0;
+    }
+}

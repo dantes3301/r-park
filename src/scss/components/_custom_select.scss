@@ -1,0 +1,124 @@
+.menu__btn_select_map{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 0 rem(48px) 0;
+    flex-wrap: wrap;
+    @include tablet{
+        flex-direction: column;
+    }
+}
+.menu__select_button{
+    display: flex;
+    align-content: flex-end;
+    @include tablet{
+        flex-direction: column;
+        & .btn{
+            width: 100%;
+        }
+    }
+}
+.city_park_custom_select_container{
+    width: max-content;
+    margin: 0 rem(30px) 0 0;
+    @include tablet{
+        width: 100%;
+        margin: 0 0 rem(24px) 0;
+    }
+}
+.city_park_custom_select_header{
+    margin: 0 0 rem(12px) 0;
+    & p{
+        color: #848484;
+    }
+}
+.city_custom_select{
+    position:relative;
+}
+.city_custom_select_head{
+    cursor: pointer;
+    width: rem(330px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: rem(17px) rem(20px);
+    border: 1px solid #848484;
+    border-radius: 4px;
+    & span{
+        color: #848484;
+    }
+    &.active{
+        & svg{
+            transform: rotate(180deg);
+        }
+    }
+    @include tablet{
+        width: 100%;
+    }
+}
+.city_custom_select_body.active > .custom__select_items{
+    display: block;
+}
+.custom__select_items{
+    display: none;
+    border: 1px solid #848484;
+    border-radius: 4px;
+    margin: rem(5px) 0 0 0;
+    padding: rem(12px) 0 rem(12px) 0;
+    position: absolute;
+    width: 100%;
+    z-index: 9999;
+    background: #fff;
+    &.active{
+        display: block;
+    }
+}
+.custom__select_city_item{
+    cursor: pointer;
+    padding: rem(8px) rem(12px);
+    list-style-type: none; 
+    color: #848484;
+    &:hover{
+        background: rgba(209, 235, 89, 0.3);
+        color: #99AB47;
+    }
+}
+.custom__select_park_item{
+    cursor: pointer;
+    padding: rem(8px) rem(12px);
+    list-style-type: none; 
+    color: #848484;
+    &:hover{
+        background: rgba(209, 235, 89, 0.3);
+        color: #99AB47;
+    }
+}
+.btn__position_select{
+    display: flex;
+    align-items: flex-end;
+    @include tablet{
+        justify-content: center;
+        margin: rem(8px) 0 0 0;
+    }
+}
+.menu__map_container{
+    display: flex;
+    align-items: center;
+    padding: rem(25px) 0 0 0;
+    & a{
+        margin: 0 0 0 rem(12px);
+        font-weight: 400;
+        font-size: rem(16px);
+        line-height: rem(24px);
+        color: #342520;
+        transition: 0.6s;
+        &:hover{
+            color: #99AB47;
+        }
+    }
+    @include tablet{
+        justify-content: center;
+        padding: 0 0 0 0;
+        margin: rem(16px) 0 0 0;
+    }
+}

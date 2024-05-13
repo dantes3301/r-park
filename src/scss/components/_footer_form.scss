@@ -1,0 +1,203 @@
+.project__background{
+    background-image: url('../images/project_fon.jpg');
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    padding: rem(75px);
+    @include tablet{
+        padding: rem(24px) rem(15px);
+    }
+}
+.project__background_one{
+    color: #ffffff;
+    margin: 0 0 rem(24px) 0;
+    & h2{
+        font-weight: 600;
+        font-size: rem(48px);
+        line-height: rem(62px);
+    }
+    @include tablet{
+        
+    }
+}
+.project__background_header{
+    & h2{
+        font-weight: 600;
+        font-size: rem(34px);
+        line-height: rem(62px);
+    }
+}
+.project__background_header_text{
+    margin: rem(12px) 0 rem(30px) 0;
+    max-width: rem(500px);
+    width: 100%;
+    & p{
+        font-weight: 500;
+        font-size: rem(32px);
+        line-height: rem(40px);
+    }
+    @include tablet{
+        max-width: 100%;
+        margin: rem(12px) 0 rem(16px) 0;
+        & p{
+            font-weight: 500;
+            font-size: rem(24px);
+            line-height: 120%;
+        }
+    }
+}
+.project__background_body{
+    margin: 0 0 rem(20px);
+    max-width: 320px;
+    width: 100%;
+    & p{
+        font-weight: 500;
+        font-size: rem(18px);
+        line-height: rem(21px);
+    }
+    @include tablet{
+        max-width: 100%;
+    }
+}
+.project__background_contact{
+    margin: 0 0 rem(20px) 0;
+    & a {
+        font-weight: 500;
+        font-size: rem(20px);
+        line-height: rem(23px);
+        color: #fff;
+        font-family: 'Roboto';
+    }
+    & p{
+        font-weight: 500;
+        font-size: rem(20px);
+        line-height: rem(23px);
+        margin: 0 0 rem(8px) 0;
+        &:last-child{
+            font-weight: 400;
+            font-size: rem(14px);
+            line-height: rem(16px);
+        }
+    }
+    @include tablet{
+       & p{
+        font-weight: 500;
+        font-size: rem(20px);
+        line-height: rem(23px);
+       } 
+    }
+}
+.project__background_contact_email{
+    margin: 0 0 rem(20px) 0;
+    & p{
+        font-weight: 500;
+        font-size: rem(20px);
+        line-height: rem(23px)
+    }
+    & a {
+        font-weight: 500;
+        font-size: rem(20px);
+        line-height: rem(23px);
+        color: #fff;
+        font-family: 'Roboto';
+    }
+}
+.project__background_messegers{
+    & p{
+        font-weight: 400;
+        font-size: rem(14px);
+        line-height: rem(16px);
+        margin: 0 0 rem(12px) 0;
+    }
+}
+.swiper-wrapper{
+    transition-duration: 600ms !important;
+}
+.project__background_info{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    & .company__doc_inf.name{
+        top: 85.5%;
+        left: 40%;
+        bottom: -150px;
+        @include desktop_base{
+            left: 35%;
+        }
+        @include desktop_small{
+            display: none;
+        }
+    }
+    & .company__doc_inf.prof{
+        left: 40%;
+        bottom: 0;
+        @include desktop_base{
+            left: 35%;
+        }
+        @include desktop_small{
+            display: none;
+        }
+    }
+    @include tablet{
+        flex-direction: column;
+    }
+}
+.project__form{
+    background: #ffffff;
+    padding: rem(32px) rem(28px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: rem(453px);
+    width: 100%;
+    @include tablet{
+        padding: rem(24px) rem(16px);
+    }
+    & .button__green{
+        width: 100%;
+        font-size: rem(24px);
+        border: none;
+        font-family: 'Oswald';
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: rem(20px) 0 rem(22px) 0;
+        cursor: pointer;
+        background: $greenLight;
+        border-radius: rem(4px);
+        transition: 0.6s;
+        &:hover{
+            background: rgba(209, 235, 89, 0.6);
+        }
+    }
+    & .project__form_header{
+        margin: 0 0 rem(28px) 0;
+        & p{
+            font-family: 'Oswald';
+            text-align: center;
+            font-weight: 400;
+            font-size: rem(24px);
+            line-height: rem(34px);
+        }
+        @include tablet{
+            margin: 0 0 rem(16px) 0;
+        }
+    }
+    & .checkbox__container{
+        margin: rem(16px) 0 rem(16px) 0;
+    }
+    & .custom__checkbox{
+        font-weight: 400;
+        font-size: rem(12px);
+        line-height: rem(14px);
+        & a{
+            color: #99AB47;
+            font-family: 'Roboto';
+        }
+        @include mobile {
+            text-align: left;
+        }
+    }
+    @include tablet{
+        margin: 0 auto 0 auto;
+    }
+}

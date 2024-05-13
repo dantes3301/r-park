@@ -1,0 +1,262 @@
+@@include('components/_header.html', {title: 'Полезно знать'})
+<div class="breadcrumbs__container">
+    <div class="container">
+        <nav>
+            <ul class="breadcrumbs">
+                <li class="breadcrumb-item"><a href="#" class="breadcrumbs_link">Главная</a></li>
+                <li class="breadcrumb-item"><p>Полезно знать</p></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="main__all">
+    <div class="container">
+        <div class="main__container">
+            <div class="header__style_h_one">
+                <h1>Полезно знать</h1>
+            </div>  
+            <div class="menu_row">
+                <div class="menu__filter">
+                    <div class="btn__position">
+                        <button class="btn btn__background_green openFilter">
+                            Фильтры
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.1622 12.9589L11.7648 19.6273C11.7005 20.7046 10.4425 21.3423 9.4375 20.807L8.34375 20.2244C7.6674 19.8642 7.25 19.1938 7.25 18.4677V12.7473C7.25 11.9357 6.92547 11.1533 6.33979 10.5528L1.82054 5.91921C1.29255 5.37786 1 4.67253 1 3.94093C1 2.3167 2.41262 1 4.15518 1H18.0559C19.6819 1 21 2.2286 21 3.74415C21 4.58623 20.5852 5.38168 19.8748 5.90193L13.4944 10.5747C12.7034 11.154 12.218 12.0226 12.1622 12.9589Z" stroke="#99AB47" stroke-width="1.5"/>
+                                </svg>                                
+                        </button>
+                    </div>
+                </div>
+                <div class="tab__two_container">
+                    <button class="tab__two">
+                        Все
+                    </button>
+                    <button class="tab__two">
+                        Название рубрики
+                    </button>
+                    <button class="tab__two">
+                        Рубрика
+                    </button>
+                    <button class="tab__two">
+                        Рубрика
+                    </button>
+                    <button class="tab__two">
+                        Название рубрики
+                    </button>
+                    <button class="tab__two">
+                        Название рубрики
+                    </button>
+                </div>
+                <div class="menu__found">
+                        <input type="text" placeholder="Поиск" class="custom__input custom__input_found">
+                        <button class="menu__found-svg_position">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.87095 0.323885C6.06093 0.422413 5.54407 0.539888 4.93849 0.755891C2.91732 1.47969 1.28187 3.08645 0.54514 5.07216C0.367709 5.54964 0.263565 5.93617 0.170992 6.47808C0.0784193 7.02756 0.0784193 8.12652 0.170992 8.676C0.44871 10.2866 1.12758 11.6015 2.26159 12.7118C3.39175 13.826 4.7302 14.4929 6.36951 14.7658C6.9288 14.8567 8.04739 14.8567 8.60669 14.7658C10.246 14.4929 11.5844 13.826 12.7146 12.7118C13.8486 11.6015 14.5275 10.2866 14.8052 8.676C14.8978 8.12652 14.8978 7.02756 14.8052 6.47808C14.5275 4.86753 13.8486 3.55256 12.7146 2.44223C11.5922 1.33948 10.2421 0.661153 8.64526 0.395886C8.2904 0.339043 7.14481 0.289779 6.87095 0.323885ZM8.56811 2.23381C10.7821 2.67718 12.4523 4.31805 12.9306 6.51597C13 6.84187 13.0155 7.03514 13.0155 7.57704C13.0155 8.11894 13 8.31221 12.9306 8.63811C12.4523 10.8398 10.8091 12.4542 8.56811 12.9241C7.98953 13.0453 6.98666 13.0453 6.40808 12.9241C4.16705 12.4542 2.52388 10.8398 2.04559 8.63811C1.97616 8.31221 1.96073 8.11894 1.96073 7.57704C1.96073 6.85703 2.0263 6.41744 2.23074 5.83386C2.92503 3.84436 4.70706 2.42328 6.84009 2.15802C7.27595 2.10496 8.10525 2.14286 8.56811 2.23381Z" fill="#99AB47"/>
+                                <path d="M7.02516 3.35647C6.97116 3.36405 6.78988 3.39816 6.62016 3.42848C5.12742 3.71269 3.84684 4.83818 3.38397 6.2782C3.27597 6.61168 3.16797 7.19527 3.16797 7.43022V7.57422H3.78126H4.3907L4.4177 7.31274C4.54499 5.96746 5.54786 4.87986 6.91716 4.60323C7.07917 4.56912 7.27588 4.5426 7.35303 4.5426H7.48803V3.93627V3.32995L7.30674 3.33374C7.2026 3.33753 7.07917 3.3489 7.02516 3.35647Z" fill="#99AB47"/>
+                                <path d="M14.4975 12.5094C13.9652 13.2484 13.2593 13.938 12.511 14.461L12.1484 14.7111L14.536 17.053C16.7308 19.2093 16.9391 19.4025 17.1705 19.5087C17.9072 19.8459 18.7134 19.7095 19.2765 19.1562C19.8397 18.603 19.9785 17.8109 19.6353 17.0871C19.5273 16.8598 19.3305 16.6551 17.1358 14.4989L14.752 12.1532L14.4975 12.5094Z" fill="#99AB47"/>
+                                </svg>                                
+                        </button>
+                        <button class="btn-remove-text">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.7101 7.28996C14.6171 7.19623 14.5065 7.12183 14.3847 7.07107C14.2628 7.0203 14.1321 6.99416 14.0001 6.99416C13.8681 6.99416 13.7374 7.0203 13.6155 7.07107C13.4936 7.12183 13.383 7.19623 13.2901 7.28996L11.0001 9.58996L8.71008 7.28996C8.52178 7.10165 8.26638 6.99587 8.00008 6.99587C7.73378 6.99587 7.47838 7.10165 7.29008 7.28996C7.10178 7.47826 6.99599 7.73366 6.99599 7.99996C6.99599 8.26626 7.10178 8.52165 7.29008 8.70996L9.59008 11L7.29008 13.29C7.19635 13.3829 7.12196 13.4935 7.07119 13.6154C7.02042 13.7372 6.99428 13.8679 6.99428 14C6.99428 14.132 7.02042 14.2627 7.07119 14.3845C7.12196 14.5064 7.19635 14.617 7.29008 14.71C7.38304 14.8037 7.49364 14.8781 7.6155 14.9288C7.73736 14.9796 7.86807 15.0058 8.00008 15.0058C8.13209 15.0058 8.2628 14.9796 8.38466 14.9288C8.50652 14.8781 8.61712 14.8037 8.71008 14.71L11.0001 12.41L13.2901 14.71C13.383 14.8037 13.4936 14.8781 13.6155 14.9288C13.7374 14.9796 13.8681 15.0058 14.0001 15.0058C14.1321 15.0058 14.2628 14.9796 14.3847 14.9288C14.5065 14.8781 14.6171 14.8037 14.7101 14.71C14.8038 14.617 14.8782 14.5064 14.929 14.3845C14.9797 14.2627 15.0059 14.132 15.0059 14C15.0059 13.8679 14.9797 13.7372 14.929 13.6154C14.8782 13.4935 14.8038 13.3829 14.7101 13.29L12.4101 11L14.7101 8.70996C14.8038 8.61699 14.8782 8.50639 14.929 8.38453C14.9797 8.26267 15.0059 8.13197 15.0059 7.99996C15.0059 7.86795 14.9797 7.73724 14.929 7.61538C14.8782 7.49352 14.8038 7.38292 14.7101 7.28996ZM18.0701 3.92996C17.1476 2.97486 16.0442 2.21303 14.8241 1.68894C13.6041 1.16485 12.2919 0.888991 10.9641 0.877453C9.6363 0.865915 8.3195 1.11893 7.09054 1.62174C5.86158 2.12455 4.74506 2.86708 3.80613 3.80601C2.8672 4.74493 2.12467 5.86145 1.62186 7.09042C1.11905 8.31938 0.866037 9.63618 0.877575 10.964C0.889113 12.2918 1.16498 13.604 1.68907 14.824C2.21316 16.044 2.97498 17.1475 3.93008 18.07C4.85255 19.0251 5.95599 19.7869 7.17603 20.311C8.39607 20.8351 9.70827 21.1109 11.0361 21.1225C12.3639 21.134 13.6807 20.881 14.9096 20.3782C16.1386 19.8754 17.2551 19.1328 18.194 18.1939C19.133 17.255 19.8755 16.1385 20.3783 14.9095C20.8811 13.6805 21.1341 12.3637 21.1226 11.0359C21.111 9.70815 20.8352 8.39595 20.3111 7.17591C19.787 5.95587 19.0252 4.85243 18.0701 3.92996ZM16.6601 16.66C15.3521 17.9694 13.6306 18.7848 11.7889 18.9673C9.94713 19.1497 8.09908 18.688 6.5596 17.6607C5.02012 16.6334 3.88444 15.1042 3.34605 13.3334C2.80767 11.5627 2.89988 9.6601 3.60699 7.94974C4.3141 6.23938 5.59235 4.82711 7.22397 3.95352C8.85559 3.07993 10.7396 2.79909 12.5551 3.15883C14.3706 3.51857 16.0051 4.49665 17.1803 5.92642C18.3555 7.35619 18.9986 9.14919 19.0001 11C19.0036 12.0512 18.7987 13.0928 18.397 14.0643C17.9953 15.0359 17.405 15.9181 16.6601 16.66Z" fill="#CCCCCC"/>
+                                </svg>                                                            
+                        </button>
+                        <div class="menu__found-options">
+                            <a href=""></a>
+                        </div>
+                </div>
+            </div>
+            <div class="know_row">
+                <div class="know">
+                    <div class="know__card">
+                        <div class="know__card-img">
+                            <a href=""><img src="images/knowCard.jpg" alt=""></a>
+                        </div>
+                        <div class="card__content">
+                            <div class="know__card-text">
+                                <a href="">Как мы работаем?</a>
+                            </div>
+                            <div class="know__card-footer">
+                                <div class="card-footer__link">
+                                    <a href="" class="link__green">Еще тематика</a>
+                                    <a href="" class="link__green">Безопастность</a>
+                                </div>
+                                <div class="card-footer__date">
+                                    <p>4 сен 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="know__card">
+                        <div class="know__card-img">
+                            <a href=""><img src="images/knowCard.jpg" alt=""></a>
+                        </div>
+                        <div class="card__content">
+                            <div class="know__card-text">
+                                <a href="">В Москве построен веревочный парк на 24 этапа.</a>
+                            </div>
+                            <div class="know__card-footer">
+                                <div class="card-footer__link">
+                                    <a href="" class="link__green">Еще тематика</a>
+                                    <a href="" class="link__green">Безопастность</a>
+                                </div>
+                                <div class="card-footer__date">
+                                    <p>4 сен 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="know__card">
+                        <div class="know__card-img">
+                            <a href=""><img src="images/knowCard.jpg" alt=""></a>
+                        </div>
+                        <div class="card__content">
+                            <div class="know__card-text">
+                                <a href="">Типы страховочных линий и выбор между ними </a>
+                            </div>
+                            <div class="know__card-footer">
+                                <div class="card-footer__link">
+                                    <a href="" class="link__green">Еще тематика</a>
+                                    <a href="" class="link__green">Безопастность</a>
+                                </div>
+                                <div class="card-footer__date">
+                                    <p>4 сен 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="know__card">
+                        <div class="know__card-img">
+                            <a href=""><img src="images/knowCard.jpg" alt=""></a>
+                        </div>
+                        <div class="card__content">
+                            <div class="know__card-text">
+                                <a href="">В Москве построен веревочный парк на 24 этапа.</a>
+                            </div>
+                            <div class="know__card-footer">
+                                <div class="card-footer__link">
+                                    <a href="" class="link__green">Еще тематика</a>
+                                    <a href="" class="link__green">Безопастность</a>
+                                </div>
+                                <div class="card-footer__date">
+                                    <p>4 сен 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="know__card">
+                        <div class="know__card-img">
+                            <a href=""><img src="images/knowCard.jpg" alt=""></a>
+                        </div>
+                        <div class="card__content">
+                            <div class="know__card-text">
+                                <a href="">Типы страховочных линий и выбор между ними</a>
+                            </div>
+                            <div class="know__card-footer">
+                                <div class="card-footer__link">
+                                    <a href="" class="link__green">Еще тематика</a>
+                                    <a href="" class="link__green">Безопастность</a>
+                                </div>
+                                <div class="card-footer__date">
+                                    <p>4 сен 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="know__card">
+                        <div class="know__card-img">
+                            <a href=""><img src="images/knowCard.jpg" alt=""></a>
+                        </div>
+                        <div class="card__content">
+                            <div class="know__card-text">
+                                <a href="">Типы веревочных парков</a>
+                            </div>
+                            <div class="know__card-footer">
+                                <div class="card-footer__link">
+                                    <a href="" class="link__green">Еще тематика</a>
+                                    <a href="" class="link__green">Безопастность</a>
+                                </div>
+                                <div class="card-footer__date">
+                                    <p>4 сен 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="know__card">
+                        <div class="know__card-img">
+                            <a href=""><img src="images/knowCard.jpg" alt=""></a>
+                        </div>
+                        <div class="card__content">
+                            <div class="know__card-text">
+                                <a href="">В Москве построен веревочный парк на 24 этапа.</a>
+                            </div>
+                            <div class="know__card-footer">
+                                <div class="card-footer__link">
+                                    <a href="" class="link__green">Еще тематика</a>
+                                    <a href="" class="link__green">Безопастность</a>
+                                </div>
+                                <div class="card-footer__date">
+                                    <p>4 сен 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="know__card">
+                        <div class="know__card-img">
+                            <a href=""><img src="images/knowCard.jpg" alt=""></a>
+                        </div>
+                        <div class="card__content">
+                            <div class="know__card-text">
+                                <a href="">Типы страховочных линий и выбор между ними</a>
+                            </div>
+                            <div class="know__card-footer">
+                                <div class="card-footer__link">
+                                    <a href="" class="link__green">Еще тематика</a>
+                                    <a href="" class="link__green">Безопастность</a>
+                                </div>
+                                <div class="card-footer__date">
+                                    <p>4 сен 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="know__card">
+                        <div class="know__card-img">
+                            <a href=""><img src="images/knowCard.jpg" alt=""></a>
+                        </div>
+                        <div class="card__content">
+                            <div class="know__card-text">
+                                <a href="">Типы веревочных парков</a>
+                            </div>
+                            <div class="know__card-footer">
+                                <div class="card-footer__link">
+                                    <a href="" class="link__green">Еще тематика</a>
+                                    <a href="" class="link__green">Безопастность</a>
+                                </div>
+                                <div class="card-footer__date">
+                                    <p>4 сен 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="know__article"> 
+                    <div class="know__article-text">
+                        <p>5 статей про самое важное при открытии веревочного парка</p>
+                    </div>
+                    <div class="btn__position">
+                        <a href="" class="btn btn__background_none">Читать статьи</a>
+                    </div>
+                </div>
+            </div> 
+            <div class="know__btn">
+                <div class="btn__position">
+                    <a href="" class="btn btn__background_green">Показать еще</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('components/_filterMobile.html')
+<script src="js/tabKnow.js"></script>
+<script src="js/input/inputFound.js"></script>
+@@include('components/_footer.html')

@@ -1,0 +1,58 @@
+
+@import "vars";
+@import "base/fonts";
+@import "base/breakpoints";
+@import "base/basic";
+@import "base/mixins";
+@import "base/modals";
+@import "base/select";
+@import "base/links";
+@import "base/breadcrumbs";
+@import "base/tab";
+@import "base/buttons_link";
+@import "base/input";
+@import "base/checkbox";
+
+@import 'helpers/_swiper.min.scss';
+
+@import "components/_footer.scss";
+@import "components/_header.scss";
+@import "components/_card_park.scss";
+@import "components/_custom_select.scss";
+@import "components/_map_card.scss";
+@import "components/_footer_form.scss";
+@import "components/_catalogCard.scss";
+@import "components/_filterMobile.scss";
+@import "components/_indexHeader.scss";
+@import "components/_reviews.scss";
+@import "components/_workCard.scss";
+@import "components/_bisnes.scss";
+
+@import "blocks/_index.scss";
+@import "blocks/_contact.scss";
+@import "blocks/_catalog__category.scss";
+@import "blocks/_map.scss";
+@import "blocks/_company.scss";
+@import "blocks/_project_list.scss";
+@import "blocks/_privacyPolicy.scss";
+@import "blocks/_FAQ.scss";
+@import "blocks/_articleDetal.scss";
+@import "blocks/_catalog.scss";
+@import "blocks/_know.scss";
+@import "blocks/_notfound.scss";
+@import "blocks/_projectMap.scss";
+@import "blocks/_franchise.scss";
+@import "blocks/_completedProject.scss";
+@import "blocks/_standardProject.scss";
+
+// @import 'helpers/_swiper.min.scss';
+
+// @import "helpers/swiper.min";
+
+// @import "components/header";
+
+// @import "blocks/index-banner";
+
+// @import "modal/modal";
+
+

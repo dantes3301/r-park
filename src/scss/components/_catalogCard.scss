@@ -1,0 +1,114 @@
+.catalog{
+    display: flex;
+    justify-content: space-between;
+    @include tablet{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: rem(24px);
+    }
+    @include mobile{
+        grid-template-columns: 1fr;
+    }
+}
+.catalog__card {
+    position: relative;
+    max-width: 225px;
+    font-family: 'Oswald';
+    @include tablet{
+        max-width: rem(328px);
+        width: 100%;
+    }
+    @include mobile{
+        max-width: 100%;
+    }
+    & a{
+        transition: 0.6s;
+        &:hover{
+            color: $greenDark;
+        }
+    }
+.catalog__card-img {
+    & img{
+        width: 100%;
+        height: 100%;
+        &:last-child{
+            display: none;
+            @include tablet{
+                display: block;
+                max-width: rem(328px);
+                width: 100%;
+            }
+            @include mobile{
+                max-width: 100%;
+            }
+        }
+        @include tablet{
+            &:first-child{
+                display: none;
+            }
+        }
+    }
+
+}
+.catalog__card-info_absolute{
+    width: rem(176px);
+    min-height: rem(208px);
+    position: absolute;
+    // bottom: rem(-33px);
+    // right: rem(-11px);
+    top: 50%;
+    left: 20%;
+    padding: 20px 15px 20px 20px;
+    background: #ffffff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    @include tablet{
+        position: static;
+        min-height: auto;
+        height: auto;
+        width: 100%;
+        box-shadow: none;
+        padding: rem(12px) 0 0 0;
+    }
+}
+}
+.catalog__card-header {
+    max-width: rem(128px);
+    margin: 0 0 rem(16px) 0;
+    & a{
+        font-weight: 500;
+        font-size: rem(18px);
+        line-height: rem(24px);
+        color: #342520;
+    }
+    @include tablet{
+        max-width: 100%;
+        margin: 0 0 0 0;
+        & a{
+            font-size: rem(24px);
+            line-height: rem(34px);
+        }
+    }
+}
+.catalog__card-list {
+    & ul{
+        padding: 0 0 0 rem(0px);
+        list-style-image: none;
+        list-style-type: none;
+    }
+    & li{
+        margin: 0 0 rem(4px) 0;
+        padding: 0 0 0 22px;
+        background-image: url('../images/markList.png');
+        background-repeat: no-repeat;
+        background-position: 0 10px;
+    }
+    & a{
+        font-weight: 400;
+        font-size: rem(16px);
+        line-height: rem(20px);
+        color: #342520;
+    }
+    @include tablet{
+        display: none;
+    }
+}

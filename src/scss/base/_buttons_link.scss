@@ -1,0 +1,49 @@
+.btn_position{
+    display: flex;
+    @include tablet{
+        justify-content: center;
+    }
+}
+.btn{
+    display: inline-block;
+    border-radius: 4px;
+    height: 60px;
+    padding: rem(16px) rem(60px);
+    text-align: center;
+    font-weight: 400;
+    font-size: rem(20px);
+    white-space: nowrap;
+    font-family: 'Oswald';
+    border: none;
+    &.btn__background_green{
+        color: $brown;
+        background: $greenLight;
+        transition: 0.6s;
+        &:hover{
+            background: rgba(209, 235, 89, 0.6);
+        }
+    }
+    &.btn__background_white{
+        color: $greenDark;
+        border: 1px solid $greenDark;
+        transition: 0.6s;
+        &:hover{
+            color: $brown;
+            background: $greenLight;
+            border: 1px solid $greenLight;
+        }
+    }
+    &.btn__background_none{
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        transition: 0.6s;
+        &:hover{
+            color: #342520;
+            background: #D1EB59;
+            border: 1px solid transparent;
+        }
+    }
+    @include mobile{
+        width: 100%;
+    }
+}

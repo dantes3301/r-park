@@ -1,0 +1,74 @@
+@@include('components/_header.html', {title: 'Контакты'})
+<div class="breadcrumbs__container">
+    <div class="container">
+        <nav>
+            <ul class="breadcrumbs">
+                <li class="breadcrumb-item"><a href="#" class="breadcrumbs_link">Главная</a></li>
+                <li class="breadcrumb-item"><p>Контакты</p></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<div class="main__all">
+    <div class="container">
+        <div class="main__container">
+            <div class="header__style_h_one">
+                <h1>Контакты</h1>
+            </div> 
+            <div class="contacts__columns_margin">
+                <div class="contact__info">
+                    <div class="contact__info_grid">
+                        <div class="contact__container">
+                            <p>Телефон</p>
+                            <a href="tel:+79649514581">+7 (964) 951-45-81</a>
+                        </div>
+                        <div class="contact__container">
+                            <p>Адрес компании</p>
+                            <p>Москва, ул. Обручева 52</p>
+                        </div>
+                        <div class="contact__container">
+                            <p>Электронная почта</p>
+                            <a href="mailto:sales@rope-park.ru">sales@rope-park.ru</a>
+                        </div>
+                        <div class="contact__container">
+                            <p>График работы</p>
+                            <p>Пн-Пт с 8:00 до 18:00</p>
+                        </div>
+                    </div>
+                    <div class="contact__map">
+                        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A1145eaddf8e648ca7ec33a738047fc31c4be29ca3ddac55fe69acf472135fb76&amp;source=constructor" height="380"></iframe>
+                    </div>
+                </div>
+                <div class="contact__form">
+                    <form>
+                        <div class="contact__form_border">
+                            <div class="project__form_header">
+                                <p>Задать вопрос</p>
+                            </div>
+                            <div class="input__container">
+                                <input minlength="2" type="text" class="custom__input name" placeholder="Ваше имя*" required>
+                            </div>
+                            <div class="input__container">
+                                <input minlength="6" type="email" class="custom__input email" placeholder="Электронная почта*" required>
+                            </div>
+                            <div class="form__textarea">
+                                <textarea cols="30" rows="10" placeholder="Введите текст сообщеиния*" required></textarea>
+                            </div>
+                            <div class="checkbox__container">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="check-1" class="checkbox__input">
+                                    <label for="check-1" class="custom__checkbox">Я даю свое согласие на <a href="" target="_blank" rel="noopener">обработку моих персональных данных</a></label>
+                                </div>
+                            </div>
+                            <div class="btn__position">
+                                <button class="button__green">Отправить</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/input/input.js"></script>
+@@include('components/_footer.html')

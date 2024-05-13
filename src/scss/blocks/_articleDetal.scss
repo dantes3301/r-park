@@ -1,0 +1,170 @@
+.tab__two_container{
+    margin: rem(64px) 0 rem(8px) 0;
+    & .tab__two{
+        margin: 0 rem(10px) 0 0;
+    }
+    @include tablet{
+        margin: rem(24px) 0 0 0;
+    }
+}
+.acticle{
+    max-width: rem(1005px);
+    width: 100%;
+}
+.arcticl__two_column{
+    display: flex;
+    @include tablet{
+        flex-direction: column;
+    }
+}
+.acrticl__header{
+    margin: rem(40px) 0 rem(24px) 0;
+    & h3 {
+    font-weight: 500;
+    font-size: rem(32px);
+    line-height: rem(42px);
+    }
+    @include tablet{
+        margin: rem(24px) 0 rem(24px) 0;
+    }
+}
+.arcticl__text{
+    & p{
+        margin: 0 0 rem(16px) 0;
+    }
+}
+.arcticl__img{
+    margin: rem(24px) 0;
+    & img{
+        width: 100%;
+    }
+}
+.read__card_row{
+    display: flex;
+    @include tablet{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: rem(16px);
+        margin: 0 0 rem(66px) 0;
+    }
+    @include mobile{
+        grid-template-columns: 1fr;
+    }
+}
+.read__card{
+    max-width: rem(315px);
+    margin: 0 rem(30px) 0 0 ;
+    @include tablet{
+        max-width: 100%;
+        margin: 0 0 0 0;
+    }
+}
+.read__card_info{
+    padding: 0 0 0 rem(16px);
+}
+.read__card_img{
+    & img{
+        width: 100%;
+    }
+}
+.read__card_header{
+    margin: rem(16px) 0 rem(16px) 0;
+    & a{
+        font-family: 'Roboto';
+        color: #000;
+        font-weight: 500;
+        font-size: rem(18px);
+        line-height: rem(28px);
+        transition: 0.6s;
+        &:hover{
+            color: $greenDark;
+        }
+    }
+}
+.read__card_footer{
+    display: flex;
+    @include desktop_small{
+        flex-direction: column;
+        & .read__card_footer_data{
+            margin: rem(10px) 0 0 0;
+        }
+    }
+    @include tablet{
+        flex-direction: row;
+        justify-content: space-between;
+        & .read__card_footer_data{
+            margin: 0 0 0 0;
+        }
+    }
+}
+.read__card_footer_text{
+    display: flex;
+    margin: 0 rem(8px) 0 0 ;
+    & a{
+        color: #99AB47;
+        font-weight: 400;
+        font-size: rem(13px);
+        line-height: rem(20px);
+        &:first-child{
+            margin: 0 rem(8px) 0 0;
+        }
+    }
+}
+.read__card_footer_data{
+    margin: 0 0 0 rem(27px);
+    & p{
+        font-weight: 400;
+        font-size: rem(14px);
+        line-height: rem(20px);
+        color: #999999
+    }
+}
+.articles__column{
+    margin: 0 0 0 rem(30px);
+    @include tablet{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+        margin: 0 0 0 0;
+    }
+    @include mobile{
+        grid-template-columns: 1fr;
+    }
+}
+.article__card{
+    max-width: rem(315px);
+    min-width: rem(250px);
+    padding: rem(20px);
+    border: 1px solid #BABABA;
+    border-radius: 4px;
+    margin: 0 0 rem(30px) 0;
+    @include tablet{
+        margin: 0 0 0 0;
+        max-width: 100%;
+    }
+}
+.article__data{
+    & p{
+        font-weight: 400;
+        font-size: rem(14px);
+        line-height: rem(16px);
+        color: #757575;
+    }
+}
+.acticle__header{
+    margin: rem(24px) 0;
+    & p{
+        font-weight: 600;
+        font-size: rem(20px);
+        line-height: rem(28px);
+    }
+}
+.acticle__link_container{
+    margin: rem(24px) 0 0 0;
+}
+.acticle__link{
+    font-size: 16px;
+    line-height: 19px;
+    font-family: 'Roboto';
+    color: #99AB47;
+}

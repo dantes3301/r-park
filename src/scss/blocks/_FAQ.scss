@@ -1,0 +1,95 @@
+.questions{
+    display: flex;
+    justify-content: space-between;
+    margin: rem(64px) 0 0 0;
+    @include tablet{
+        flex-direction: column;
+        margin: rem(24px) 0 0 0;
+    }
+}
+.accardeon{
+    max-width: rem(827px);
+    width: 100%;
+    @include tablet{
+        max-width: 100%;
+    }
+}
+.accardeon__item{
+    // padding: rem(18px) rem(25px);
+    width: 100%;
+    // border: 1px solid #BABABA;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.5s;
+
+    &:not(:last-child){
+        margin: 0 0 rem(20px) 0;
+        @include tablet{
+            margin: 0 0 rem(16px) 0;
+        }
+    }
+}
+.accardeon__question-text{
+    width: max-content;
+    @include mobile{
+        margin: 0 rem(16px) 0 0;
+    }
+}
+.accardeon__question_visability{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #BABABA;
+    padding: rem(18px) rem(25px);
+    &.active{
+        & svg:last-child{
+            display: block;
+        }
+        & svg:first-child{
+            display: none;
+        }
+    }
+}
+.accardeon__question_visability.active + .accardeon__answer_visability{
+    display: flex;  
+        max-height: rem(182px);      
+        justify-content: space-between;
+        border: 1px solid #BABABA;
+        @include tablet_small{
+            max-height: 300px;
+        }
+        @include mobile{
+            max-height: 340px;
+        }
+}
+.accardeon__answer_visability{
+    background-color: #fff;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.8s;
+    margin: rem(4px) 0 0 0;
+    border: 1px solid transparent;
+    // transition: margin 0.5s;
+    @include tablet{
+        margin: rem(4px) 0 0 0;
+    }
+}
+.accardeon__answer-text{
+    max-width: rem(733px);
+    width: 100%;
+    margin: 20px 25px;
+}
+.accardeon__question-svg{
+    display: flex;
+    align-items: center;
+    & svg:last-child{
+        display: none;
+    }
+}
+.question-form{
+    & .contact__form_border{
+        margin: 0 0 0 rem(20px);
+        @include tablet{
+           margin: 0 0 0 0;
+        }
+    }
+}

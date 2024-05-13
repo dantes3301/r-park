@@ -1,0 +1,33 @@
+.notfound__image-container{
+    display: flex;
+    justify-content: center;
+    max-width: rem(415px);
+    width: 100%;
+    margin: 0 auto 0 auto;
+    & img{
+        width: 100%;
+    }
+}
+.notfound__content{
+    @include tablet{
+        margin: rem(230px) 0 rem(230px) 0;
+    }
+}
+.notfound__text{
+    margin: rem(48px) 0 0 0;
+    display: flex;
+    justify-content: center;
+    & p{
+        font-weight: 400;
+        font-size: rem(28px);
+        line-height: rem(33px);
+    }
+    @include tablet{
+        margin: rem(24px) 0 0 0;
+    }
+}
+.notfound__btn{
+    margin: rem(24px) 0 0 0;
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,11 @@
+.map__container{
+    margin: 150px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    & a{
+        font-size: 28px;
+        margin: 0 0 rem(20px) 0;
+    }
+}

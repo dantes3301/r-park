@@ -1,0 +1,12 @@
+.catalog_margin{
+    margin: rem(64px) 0 0 0;
+    @include tablet{
+        margin: rem(24px) 0 0 0;
+    }
+}
+.form_margin{
+    margin: rem(172px) 0 0 0;
+    @include tablet{
+        margin: rem(56px) 0 0 0;
+    }
+}

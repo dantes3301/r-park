@@ -1,0 +1,11 @@
+.link{
+    transition: 0.6s;
+    &.link__grey{
+        color: #D0D0D0;
+        font-size: rem(14px);
+        font-family: 'Roboto';
+        &:hover{
+            color: $greenDark;
+        }
+    }
+}

@@ -1,0 +1,243 @@
+.company__reviews_container{
+    & .company__leader_header{
+        display: flex;
+        justify-content: space-between;
+        max-width: 100%;
+        margin: 0 0 rem(-45px) 0;
+        @include tablet{
+            margin: 0 0 rem(-30px) 0;
+        }
+    }
+    .swiper{
+        padding: rem(100px) rem(29px) 0 rem(29px);
+        @include tablet{
+            padding: 0 rem(15px) 0 0;
+        }
+        // & .swiper-button-next{
+        //     transform: translate(0, 30%);
+        //     margin: 0 0 0 0;
+        // }
+        // & .swiper-button-prev{
+        //     transform: translate(0, 30%);
+        //     margin: 0 0 0 0;
+        // }
+        @include mobile{
+            & .swiper-button-next{
+                top: 165px;
+            }
+            & .swiper-button-prev{
+                top: 165px;
+            }
+        }
+    }
+    & .swiper-slide{
+        width: 100%;
+    } 
+    
+.company__swipper{
+
+    @include tablet{
+        display: none;
+    }
+    & .swiper-pagination{
+        top: 0;
+        right: 0 ;
+        left: auto;
+        width: max-content;
+        font-family: 'Oswald';
+        font-weight: 500;
+        font-size: rem(32px);
+        line-height: rem(42px);
+        height: max-content;
+        @include tablet{
+            font-weight: 500;
+            font-size: rem(24px);
+            line-height: 120%;
+        }
+        & .swiper-pagination-current{
+            color: #99AB47;
+        }
+    }
+    & .swiper-button-next-rev{
+        width: max-content;
+        position: absolute;
+        cursor: pointer;
+        z-index: 9999;
+        right: 0;
+        top: 55%;
+        & svg{
+        transition: 0.6s;
+        & rect{
+            transition: 0.6s;
+        } 
+        & path{
+            transition: 0.6s;
+        }
+        &:hover{
+            & rect{ 
+                fill: #99AB47;
+                &+ path{
+                    fill: #fff;
+                }
+            }
+        }
+    }
+}
+& .swiper-button-prev-rev{
+    width: max-content;
+    position: absolute;
+    cursor: pointer;
+    left: 0;
+    top: 55%;
+    z-index: 9999;
+        & svg{
+        transition: 0.6s;
+        & rect{
+            transition: 0.6s;
+        } 
+        & path{
+            transition: 0.6s;
+        }
+        &:hover{
+            & rect{ 
+                fill: #99AB47;
+                &+ path{
+                    fill: #fff;
+                }
+            }
+        }
+    }
+} 
+}
+}
+.company__swipper_mobile{
+    display: none;
+    @include tablet{
+        display: block;
+    }
+    & .swiper{
+        padding: 65px 5px 0 5px;
+    }
+    & .swiper-pagination{
+        top: 0;
+        right: 0 ;
+        left: auto;
+        width: max-content;
+        font-family: 'Oswald';
+        height: max-content;
+        @include tablet{
+            font-weight: 500;
+        font-size: 24px;
+        line-height: 120%;
+        }
+        & .swiper-pagination-current{
+            color: #99AB47;
+        }
+    }
+    
+}
+.swiper-slide.swiper-slide-active{
+    & .reviews_info{
+        position: static;
+    }
+}
+.reviews_info{
+    min-height: rem(340px);
+    border: 1px solid #C4C4C4;
+    padding: rem(20px) rem(32px) rem(32px) rem(32px);
+    border-radius: 4px;
+    @include tablet{
+        position: absolute;
+    }
+}
+.reviews_header{
+    display: flex;
+    @include tablet{
+        flex-direction: column;
+    }
+}
+.reviews_head{
+    & p{
+        font-weight: 500;
+        font-size: rem(18px);
+        line-height: rem(22px);
+    }
+}
+.reviews_head_text{
+
+    & p{
+        font-weight: 500;
+        font-size: rem(16px);
+        line-height: rem(19px);
+        color: #8B8B8B;
+    }
+}
+.reviews_text{
+    margin: rem(47px) 0 0 0;
+    @include tablet{
+        margin: 25px 0 0 0;
+    }
+}
+.reviews_svg{
+    margin: 0 rem(24px) 0 0;
+}
+.reviews_video{
+    width: 100%;
+    height: rem(340px);
+    // background-image: url('../images/company_video.jpg');
+    // background-size: auto 100%;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include mobile{
+        height: rem(172px);
+        background-size: 100% auto;
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        object-fit: cover;
+    }
+    video{
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    iframe{
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    &.active{
+        iframe{
+            display: block;
+        }
+        video{
+            display: block;
+        }
+        img{
+            display: none;
+        }
+        .reviews_video_svg{
+            display: none;
+        }
+    }
+}
+.reviews_video_svg{
+    width: max-content;
+    cursor: pointer;
+    & circle:first-child{
+        transition: 0.6s;
+        &:hover{
+            fill: #99AB47;
+        }
+    }
+}

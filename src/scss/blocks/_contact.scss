@@ -1,0 +1,154 @@
+.contacts__columns_margin{
+    margin: rem(64px) 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    @include tablet{
+        flex-direction: column;
+        margin: rem(24px) 0 0 0;
+    }
+}
+.contact__info{
+    max-width: rem(805px);
+    width: 100%;
+    @include tablet{
+        max-width: 100%;
+    }
+}
+.contact__info_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: rem(30px);
+    width: 100%;
+    @include tablet{
+        gap: rem(24px);
+    }
+    @include mobile{
+        grid-template-columns: 1fr;
+    }
+}
+.contact__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: rem(45px) rem(50px);
+    border: 1px solid #BABABA;
+    border-radius: 4px;
+    max-width: rem(386px);
+    width: 100%;
+    & p{
+        font-weight: 400;
+        font-size: rem(20px);
+        line-height: rem(23px);
+        color: #565656;
+        margin: 0 0 rem(8px) 0;
+        &:last-child{
+            font-weight: 500;
+            font-size: rem(24px);
+            line-height: rem(28px);
+            color: #000000;
+        }
+    }
+    & a {
+        font-family: 'Roboto';
+        font-weight: 500;
+            font-size: rem(24px);
+            line-height: rem(28px);
+            color: #000000;
+            transition: 0.6s;
+            &:hover{
+                color: $greenDark;
+            }
+    }
+    @include tablet{
+        max-width: 100%;
+    }
+}
+.contact__map{
+    margin: rem(20px) 0 0 0;
+    width: 100%;
+    height: rem(380px);
+
+    & iframe{
+        width: 100%;
+        border: none;
+    }
+    @include tablet{
+        margin: rem(24px) 0 0 0;
+    }
+}
+.contact__form{
+    @include tablet{
+        margin: rem(54px) 0 0 0;
+    }
+}
+
+.contact__form_border{
+    border: rem(1px) solid #BABABA;
+    border-radius: rem(4px);
+    padding: rem(32px) rem(28px);
+    max-width: rem(453px);
+    min-height: 100%;
+    margin: 0 rem(15px) 0 rem(15px);
+    overflow: hidden;
+    @include tablet{
+        max-width: 100%;
+        margin: 0 0 0 0;
+        padding: 24px 16px;
+    }
+    & form{
+        width: auto;
+    }
+    & .checkbox__container{
+        margin: rem(16px) 0 rem(16px) 0;
+    }
+    & .button__green{
+        width: 100%;
+        font-size: rem(24px);
+        border: none;
+        font-family: 'Oswald';
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: rem(20px) 0 rem(22px) 0;
+        cursor: pointer;
+        background: $greenLight;
+        border-radius: rem(4px);
+        transition: 0.6s;
+        &:hover{
+            background: rgba(209, 235, 89, 0.6);
+        }
+    }
+    & label{
+        font-weight: 400;
+        font-size: rem(12px);
+        line-height: rem(14px);
+        & a{
+            font-family: 'Roboto';
+            color: $greenDark;
+        }
+    }
+    & .project__form_header{
+        margin: 0 0 rem(28px) 0;
+        & p{
+            font-weight: 400;
+            font-size: rem(24px);
+            line-height: rem(34px);
+            font-family: 'Oswald';
+            text-align: center;
+        }
+    }
+}
+.form__textarea{
+
+    & textarea{
+        width: 100%;
+        height: rem(350px);
+        resize: none;
+        border: rem(1px) solid #BABABA;
+        border-radius: rem(4px);
+        font-weight: 400;
+        font-size: rem(14px);
+        line-height: rem(16px);
+        padding: rem(17px) rem(20px);
+    }
+}
